@@ -1,0 +1,8 @@
+<h2>Education Index</h2>
+{{outlet}}
+
+<ul>
+  {{#each model as |education|}}
+    <li>{{education.school}} {{education.duration}}</li>
+  {{/each}}
+</ul>

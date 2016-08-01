@@ -1,0 +1,8 @@
+<h3>COMPONENT</h3>
+<h4 style="color: red;">
+  {{project.title}}
+  {{project.description}}
+  [{{#each project.skills as |skill| }}
+  {{skill.skill}}
+  {{/each}}]
+</h4>
