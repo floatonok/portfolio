@@ -13,7 +13,7 @@ Router.map(function () {
   })
   this.route('educations')
   this.route('skills')
-  this.route('profiles');
+  this.route('profiles')
 })
 
 export default Router
