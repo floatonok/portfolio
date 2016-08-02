@@ -18,12 +18,15 @@
 
     {{content-for "head-footer"}}
   </head>
-  <body>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
       {{content-for "body"}}
 
     <script src="assets/vendor.js"></script>
     <script src="assets/portfolio.js"></script>
+    
+    <!-- JQuery -->
+    <script src="<script   src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>"></script>
 
     <!-- Bootstrap Javascript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
