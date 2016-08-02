@@ -1,0 +1,10 @@
+<div style="border: 1px solid black;">
+  <h4 style="color: red;">portfolio-projects: component</h4>
+  <ul>
+    {{#each projects as |project|}}
+      <li>
+        {{project-indiv project=project}}
+      </li>
+    {{/each}}
+  </ul>
+</div>

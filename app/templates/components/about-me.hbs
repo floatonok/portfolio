@@ -1,0 +1,10 @@
+<div style="border: 1px solid black;">
+  <h4 style="color: red;">about-me: component</h4>
+  <ul>
+    {{#each profiles as |profile|}}
+      <li>
+        {{profile.name}} | {{profile.industry}} | {{profile.currently}} | {{profile.education}} 
+      </li>
+    {{/each}}
+  </ul>
+</div>
