@@ -1,10 +1,12 @@
-<div id="educations" style="border: 1px solid black;">
-  <h4 style="color: red;">portfolio-educations: component</h4>
-  <ul>
-    {{#each educations as |education|}}
-      <li>
-        {{education.school}} | {{education.duration}}
-      </li>
-    {{/each}}
-  </ul>
+<div id="educations">
+  <h1 style="color: white;">EDUCATION</h1>
+  <div class="container">
+    <ul>
+      {{#each educations as |education|}}
+        <li>
+          {{education.school}} | {{education.duration}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
 </div>
