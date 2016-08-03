@@ -1,0 +1,49 @@
+<div id={{project.id}} class="modal fade modal-fullscreen force-fullscreen" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-title">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>{{project.title}}</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="container">
+          <div class="row top-margin">
+
+            <div class="col-md-6">
+              <img src="https://66.media.tumblr.com/68f6d0ebc9b4f7c7a00247e87651381a/tumblr_ob9z0iInln1qgnecwo1_540.jpg" alt="" class="img-responsive center-block">
+            </div>
+
+            <div class="col-md-6">
+              <h3>Description</h3>
+              <p>{{project.description}}</p>
+              <h3>Tools Used</h3>
+              {{#each project.skills as |skill|}}
+                <p>{{skill.skill}}</p>
+              {{/each}}
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" style="text-align: center">
+              <button type="button" class="btn custom-btn-2" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

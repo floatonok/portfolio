@@ -1,11 +1,5 @@
-<div style="border: 2px dotted black;">
-  <h3>{{project.title}}</h3>
-  <p>
-    {{project.description}}
-  </p>
-  {{#each project.skills as |skill| }}
-  <div style="border: 1px solid black; margin: 5px; display: inline;">
-    {{skill.skill}}
-  </div>
-  {{/each}}
+<div style="height: 100%; background-color: #F2385A; padding-top: 5px;">
+  <a href="#" data-toggle="modal" data-target="#{{project.id}}">
+    <h3 style="color: white;">{{project.title}}</h3>
+  </a>
 </div>

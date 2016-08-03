@@ -79,13 +79,14 @@ of those sections to manage the look and feel of the site. */
 /* ====================================== */
 
 #portfolio {
-  padding: 80px 0px 40px 0px;
-  border-bottom: 1px solid #F1EBEB;
+  /*padding: 80px 0px 40px 0px;
+  border-bottom: 1px solid #F1EBEB;*/
 }
 
 .portfolio-wrap .mix {
   display: none;
   margin-bottom: 20px;
+  height: 140px;
 }
 
 .item-filter {
@@ -93,7 +94,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .item-filter ul li {
-  border: 1px solid #E8E8E8;
+  /*border: 1px solid #E8E8E8;*/
   color: #5A5252;
   cursor: pointer;
   padding: 5px 10px;
@@ -133,6 +134,11 @@ of those sections to manage the look and feel of the site. */
   font-style: italic;
   font-weight: 400;
   margin-top: 20px;
+}
+
+.modal.modal-fullscreen.force-fullscreen .modal-body {
+    margin-top: 160px;
+    margin-bottom: 80px;
 }
 
 /* ======================================

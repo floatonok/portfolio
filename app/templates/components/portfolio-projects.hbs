@@ -1,4 +1,4 @@
-<div id="projects">
+<div id="projects" style="overflow: scroll;">
   <section id="portfolio" class="portfolio-wrap">
     <div class="container">
       <div class="row">
@@ -15,25 +15,14 @@
           </ul>
         </div>
         <div id="portfolio-items" class="col-xs-12">
+
           {{#each projects as |project|}}
-            {{project-indiv project=project}}
+          {{project-indiv project=project}}
           {{/each}}
-          <div class="col-md-3 col-xs-12 mix architecture">
-            <div style="border: 2px dotted black;">
-              <h3>Big Data as a Lover</h3>
-              <p>
-                London Internet Museum Competition (Honorable Mention)
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-xs-12 mix architecture">
-            <div style="border: 2px dotted black;">
-              <h3>The Collab-oratory</h3>
-              <p>
-                Vertical Cities Asia Competition (Honorable Mention)
-              </p>
-            </div>
-          </div>
+
+          {{#each projects as |project|}}
+          {{project-modal project=project}}
+          {{/each}}
         </div>
       </div>
     </div>
