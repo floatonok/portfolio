@@ -45,14 +45,14 @@ h1, h2, h3, h4, a {
 
 #skills {
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
     background: #eee;
 }
 
 #projects {
     height: 100vh;
-    padding-top: 40px;
+    padding-top: 30px;
     text-align: center;
     background: #fff;
 }
