@@ -36,6 +36,8 @@ export default Ember.Component.extend({
   // }.property('proficiency.[]'),
 
   didRender: function () {
+    new Vivus('Layer_2', {duration: 100})
+
     var ctx = document.getElementById('myChart')
     var myChart = new Chart(ctx, {
       type: 'bar',

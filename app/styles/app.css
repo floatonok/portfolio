@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
 body {
     width: 100%;
     height: 100%;
@@ -42,10 +36,6 @@ h1, h2, h3, h4, a {
     }
 }
 
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
-of those sections to manage the look and feel of the site. */
-
 #about-me {
     height: 100vh;
     padding-top: 80px;
@@ -55,14 +45,14 @@ of those sections to manage the look and feel of the site. */
 
 #skills {
     height: 100vh;
-    padding-top: 80px;
+    padding-top: 50px;
     text-align: center;
     background: #eee;
 }
 
 #projects {
     height: 100vh;
-    padding-top: 80px;
+    padding-top: 40px;
     text-align: center;
     background: #fff;
 }
@@ -82,7 +72,22 @@ of those sections to manage the look and feel of the site. */
 }
 
 /* ======================================
- *  16. Portfolio
+ *  Navbar
+/* ====================================== */
+
+
+#myScrollSpy {
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+}
+
+/*#myScrollSpy ul.nav {
+  padding-top: 80px;
+}*/
+
+/* ======================================
+ *  Portfolio
 /* ====================================== */
 
 #portfolio {
