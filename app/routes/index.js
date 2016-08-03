@@ -6,7 +6,8 @@ export default Ember.Route.extend({
       profiles: this.store.findAll('profile'),
       projects: this.store.findAll('project'),
       educations: this.store.findAll('education'),
-      skills: this.store.findAll('skill')
+      skills: this.store.findAll('skill'),
+      achievements: this.store.findAll('achievement')
     })
   }
 })
