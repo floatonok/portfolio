@@ -1,12 +1,41 @@
 <div id="projects">
-  <h1>PROJECTS</h1>
-  <div class="container">
-    <ul>
-      {{#each projects as |project|}}
-        <li>
-          {{project-indiv project=project}}
-        </li>
-      {{/each}}
-    </ul>
-  </div>
+  <section id="portfolio" class="portfolio-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>PROJECTS</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 item-filter bot-margin">
+          <ul class="list-inline text-center">
+            <li class="filter" data-filter="all">All</li>
+            <li class="filter" data-filter=".webdev">Web Dev</li>
+            <li class="filter" data-filter=".architecture">Architecture</li>
+          </ul>
+        </div>
+        <div id="portfolio-items" class="col-xs-12">
+          {{#each projects as |project|}}
+            {{project-indiv project=project}}
+          {{/each}}
+          <div class="col-md-3 col-xs-12 mix architecture">
+            <div style="border: 2px dotted black;">
+              <h3>Big Data as a Lover</h3>
+              <p>
+                London Internet Museum Competition (Honorable Mention)
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12 mix architecture">
+            <div style="border: 2px dotted black;">
+              <h3>The Collab-oratory</h3>
+              <p>
+                Vertical Cities Asia Competition (Honorable Mention)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
