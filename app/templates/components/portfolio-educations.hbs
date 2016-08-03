@@ -1,24 +1,32 @@
 <div id="educations" style="background-image:url(line.svg); background-position:center; background-repeat: no-repeat;">
-  <div class="container-fluid" style="margin-top: 10%;">
+  <div class="container-fluid">
     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="text-align: right;">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s" style="text-align: right; margin-top: 5%;">
       <h2>EDUCATION</h2>
-      <ul>
         {{#each educations as |education|}}
-          <li>
-            {{education.school}} | {{education.duration}}
-          </li>
+          <div class="row wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s">
+            <div class="col-lg-8" style="text-align: left;">
+              <h5>{{education.school}}</h5>
+            </div>
+            <div class="col-lg-4">
+              <h6>{{education.duration}}</h6>
+            </div>
+          </div>
         {{/each}}
-      </ul>
     </div>
     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="text-align: left;">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 wow fadeInDown" data-wow-duration="2s" data-wow-delay=".5s" style="text-align: left; margin-top: 15%;">
       <h2>ACCOLADES</h2>
-        {{#each educations as |education|}}
-          <li>
-            {{education.school}} | {{education.duration}}
-          </li>
-        {{/each}}
+      {{#each educations as |education|}}
+        <div class="row wow fadeInDown" data-wow-duration="2s" data-wow-delay=".5s">
+          <div class="col-lg-4">
+            <h6>{{education.duration}}</h6>
+          </div>
+          <div class="col-lg-8" style="text-align: right;">
+            <h5>{{education.school}}</h5>
+          </div>
+        </div>
+      {{/each}}
     </div>
     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
   </div>
