@@ -23,6 +23,10 @@ h1, h2, h3, h4, a {
   font-family: 'Reem Kufi', sans-serif;
 }
 
+a {
+  color: black;
+}
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;

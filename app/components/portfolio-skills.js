@@ -51,6 +51,9 @@ export default Ember.Component.extend({
             ticks: {
               beginAtZero: true
             }
+          }],
+          xAxes: [{
+            barPercentage: 0.7
           }]
         }
       }
@@ -69,6 +72,9 @@ export default Ember.Component.extend({
             ticks: {
               beginAtZero: true
             }
+          }],
+          xAxes: [{
+            barPercentage: 0.6
           }]
         }
       }
