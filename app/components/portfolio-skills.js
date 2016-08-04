@@ -2,42 +2,41 @@ import Ember from 'ember'
 
 export default Ember.Component.extend({
   numberData: Ember.computed('model', function () {
-    return {
-      labels: this.get('skills').mapBy('skill'),
+    let graphData = {
+      labels: [],
       datasets: [{
         label: 'Skills',
-        data: this.get('skills').mapBy('proficiency'),
+        data: [],
         backgroundColor: '#F2385A'
       }]
     }
+    return this.get('skills').filter(skill => skill.get('category') === 'webdev')
+      .reduce((data, skill) => {
+        data.labels.push(skill.get('skill'))
+        data.datasets[0].data.push(skill.get('proficiency'))
+        return data
+      }, graphData)
   }),
 
   numberData2: Ember.computed('model', function () {
-    return {
-      labels: this.get('skills').mapBy('skill'),
+    let graphData = {
+      labels: [],
       datasets: [{
         label: 'Skills',
-        data: this.get('skills').mapBy('proficiency'),
+        data: [],
         backgroundColor: '#000'
       }]
     }
+    return this.get('skills').filter(skill => skill.get('category') === 'archi')
+      .reduce((data, skill) => {
+        data.labels.push(skill.get('skill'))
+        data.datasets[0].data.push(skill.get('proficiency'))
+        return data
+      }, graphData)
   }),
-
-  // skillsArray: function () {
-  //   return this.get('skills').map(function (item) {
-  //     return item.getProperties('skill')
-  //   })
-  // }.property('skill.[]'),
-
-  // proficiencyArray: function () {
-  //   return this.get('skills').map(function (item) {
-  //     return item.getProperties('proficiency')
-  //   })
-  // }.property('proficiency.[]'),
 
   didRender: function () {
     new Vivus('Layer_2', {duration: 100})
-
     var ctx = document.getElementById('myChart')
     var myChart = new Chart(ctx, {
       type: 'bar',
@@ -46,6 +45,13 @@ export default Ember.Component.extend({
         responsive: true,
         legend: {
           display: false
+        },
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
         }
       }
     })
@@ -57,6 +63,13 @@ export default Ember.Component.extend({
         responsive: true,
         legend: {
           display: false
+        },
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
         }
       }
     })

@@ -1,6 +1,7 @@
 /* jshint node: true */
 
 module.exports = function (environment) {
+
   var ENV = {
     modulePrefix: 'portfolio',
     environment: environment,
@@ -10,6 +11,7 @@ module.exports = function (environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
+        // ENABLE_DS_FILTER = true
       }
     },
 
