@@ -1,5 +1,5 @@
 import DS from 'ember-data'
 
 export default DS.RESTAdapter.extend({
-  host: 'http://localhost:3000/api'
+  host: 'https://api-dot-isabella.herokuapp.com/api'
 })
