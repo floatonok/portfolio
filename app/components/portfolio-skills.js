@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       datasets: [{
         label: 'Skills',
         data: [],
-        backgroundColor: '#F2385A'
+        backgroundColor: '#EA2E49'
       }]
     }
     return this.get('skills').filter(skill => skill.get('category') === 'webdev')
@@ -24,7 +24,7 @@ export default Ember.Component.extend({
       datasets: [{
         label: 'Skills',
         data: [],
-        backgroundColor: '#000'
+        backgroundColor: '#333745'
       }]
     }
     return this.get('skills').filter(skill => skill.get('category') === 'archi')
