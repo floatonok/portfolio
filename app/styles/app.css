@@ -5,6 +5,10 @@ body {
     color: #333745;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -20,7 +24,7 @@ h1 {
   font-size: 3.2em;
 }
 
-h1, h2, h3, h4, a {
+h1, h2, h3, h4, h5, h6, a {
   font-family: 'Reem Kufi', sans-serif;
   color: #333745;
 }

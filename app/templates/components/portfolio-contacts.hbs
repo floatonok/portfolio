@@ -3,8 +3,8 @@
   <object id="Layer_6" type="image/svg+xml" data="contact.svg" style="height: 200px;"></object>
   <div class="container">
     <div class="row" style="margin-top: 50px;">
-      <div class="col-lg-2"></div>
-      <div class="col-lg-5">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
         <form name="sentMessage" id="contactForm" novalidate>
           <div class="row">
 
@@ -33,10 +33,12 @@
           </div>
         </form>
       </div>
-      <div class="col-lg-3">
-        LINKS HERE
+      <div class="col-lg-1">
+        {{#each links as |link|}}
+        <a href="{{link.url}}"><img src="{{link.icon}}" style="width: 50px; display: flex; flex-direction: column; margin: 10px;"/></a>
+        {{/each}}
       </div>
-      <div class="col-lg-2"></div>
+      <div class="col-lg-1"></div>
     </div>
   </div>
 </div>

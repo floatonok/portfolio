@@ -7,7 +7,8 @@ export default Ember.Route.extend({
       projects: this.store.findAll('project'),
       educations: this.store.findAll('education'),
       skills: this.store.findAll('skill'),
-      achievements: this.store.findAll('achievement')
+      achievements: this.store.findAll('achievement'),
+      links: this.store.findAll('link')
     })
   }
 })
