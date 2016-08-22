@@ -3,10 +3,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <!-- <h1>PROJECTS</h1> -->
         <object id="Layer_3" type="image/svg+xml" data="portfolio.svg" style="height: 200px;"></object>
         </div>
       </div>
+
       <div class="row">
         <div class="col-xs-12 item-filter bot-margin">
           <ul class="list-inline text-center">
@@ -15,8 +15,8 @@
             <li class="filter" data-filter=".archi">Architecture</li>
           </ul>
         </div>
-        <div id="portfolio-items" class="col-xs-12">
 
+        <div id="portfolio-items" class="col-xs-12">
           {{#each projects as |project|}}
           {{project-indiv project=project}}
           {{/each}}
