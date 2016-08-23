@@ -45,14 +45,14 @@ h1, h2, h3, h4, h5, h6, a {
 #about-me {
     height: 100vh;
     width: 100vw;
-    padding-top: 80px;
+    padding-top: 10vh;
     text-align: center;
 }
 
 #projects {
     height: 100vh;
     width: 100vw;
-    padding-top: 20px;
+    padding-top: 3vh;
     text-align: center;
     background: rgba(218,237,226,0.5);
 }
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6, a {
 #skills {
     height: 100vh;
     width: 100vw;
-    padding-top: 30px;
+    padding-top: 4vh;
     text-align: center;
     background: #fff;
 }
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6, a {
 #educations {
     height: 100vh;
     width: 100vw;
-    padding-top: 80px;
+    padding-top: 10vh;
     text-align: center;
     background: rgba(218,237,226,0.6);
 }
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6, a {
 #contacts {
     height: 100vh;
     width: 100vw;
-    padding-top: 50px;
+    padding-top: 6vh;
     text-align: center;
     background: #fff;
 }
