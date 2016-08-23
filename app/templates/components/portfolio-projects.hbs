@@ -1,4 +1,4 @@
-<div id="projects" style="overflow: scroll;">
+<div id="projects" style="overflow-y: scroll;">
   <section id="portfolio" class="portfolio-wrap">
     <div class="container">
       <div class="row">
@@ -15,15 +15,16 @@
             <li class="filter" data-filter=".archi">Architecture</li>
           </ul>
         </div>
+        <div class="row">
+          <div id="portfolio-items">
+            {{#each projects as |project|}}
+            {{project-indiv project=project}}
+            {{/each}}
 
-        <div id="portfolio-items" class="col-xs-12">
-          {{#each projects as |project|}}
-          {{project-indiv project=project}}
-          {{/each}}
-
-          {{#each projects as |project|}}
-          {{project-modal project=project}}
-          {{/each}}
+            {{#each projects as |project|}}
+            {{project-modal project=project}}
+            {{/each}}
+          </div>
         </div>
       </div>
     </div>
